@@ -83,7 +83,7 @@ database.ref().on("child_added", function(childSnapshot) {
   newrow.append($("<td class='text-center'>" + childSnapshot.val().frequency + "</td>"));
   newrow.append($("<td class='text-center'>" + moment(nextTrain).format("LT") + "</td>"));
   newrow.append($("<td class='text-center'>" + minToArrival + "</td>"));
-  newrow.append($("<td class='text-center'><button class='arrival btn btn-danger btn-xs' data-key='" + key + "'>X</button></td>"));
+  newrow.append($("<td class='text-center'><button class='arrival btn btn-outline-dark' data-key='" + key + "'>X</button></td>"));
 
   if (minToArrival < 6) {
     newrow.addClass("info");
